@@ -2,8 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-listado',
-  templateUrl: './listado.component.html',
-  styleUrls: ['./listado.component.less']
+  templateUrl: './listado.component.html'
 })
 export class ListadoComponent {
 

@@ -6,11 +6,14 @@ import { dbzService } from '../services/dbz.service';
   templateUrl: './personajes.component.html'
 })
 export class PersonajesComponent {
+  
+  constructor(private dbzService: dbzService) { }
 
   //@Input() personajes: Personaje[] = [];
+  
+  //Hace referencia al getter de servicio
   get personajes() {
     return this.dbzService.personajes;
   }
 
-  constructor(private dbzService: dbzService) { }
 }
